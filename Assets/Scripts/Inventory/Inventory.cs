@@ -17,8 +17,22 @@ public class Inventory : Singleton<Inventory>
     }
 
     // Update is called once per frame
-    void Update()
+    private void AddItem(InventoryItem itemToAdd, int quantity) 
     {
-        
+        if (itemToAdd == null) { return;}
+
+    }
+
+    private List<int> VerifyExistences(string itemId) {
+        var itemIdexes = new List<int>();
+        for (int i = 0; i < inventoryItems.Length; i++)
+        {
+            if (inventoryItems[i].ID == itemId)
+            {
+                itemIdexes.Add(i);
+            }
+        }
+
+        return itemIdexes;
     }
 }

@@ -52,5 +52,6 @@
         "temp/":true,
         "Temp/":true
     },
-    "dotnet.defaultSolution": "cursorpg.sln"
+    "dotnet.defaultSolution": "cursorpg.sln",
+    "dotnet.preferCSharpExtension": true
 }
